@@ -32,7 +32,7 @@ header {
   position: fixed;
   display: flex;
   width: 100%;
-  background-color: #e5e5e5;
+  background-color: var(--bg);
   z-index: 999;
 }
 header nav {
@@ -45,12 +45,12 @@ header nav {
   padding: 0px 90px;
 }
 header .bi-list {
-  color: #212121;
+  color: var(--grey);
   font-size: 22px;
   font-weight: 600;
 }
 header .logo {
-  color: #212121;
+  color: var(--grey);
   font-size: 28px;
   font-weight: 600;
 }
@@ -63,6 +63,7 @@ header .logo {
   width: 100vw;
   height: 80vh;
   overflow: hidden;
+  z-index: -5;
 }
 .menu {
   position: absolute;
@@ -70,7 +71,7 @@ header .logo {
   top: 0;
   left: -100%;
   text-align: end;
-  background-color: #c7c7c7;
+  background-color: var(--bg);
   width: 250px;
   height: 80vh;
   z-index: 111;
@@ -89,7 +90,7 @@ header .logo {
   /* display: block; */
 }
 .menu li a {
-  color: #212121;
+  color: var(--grey);
   cursor: pointer;
 }
 
