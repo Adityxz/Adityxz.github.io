@@ -25,7 +25,6 @@
     <main>
       <!-- home -->
       <article id="home">
-        <img src="assets/bg.jpg" alt="" class="home_bg" />
         <div class="text_home">
           <h1>
             Uncover my talent and inspire your vision.<br />
@@ -104,21 +103,76 @@
           </li>
           <span class="stroke"></span>
           <li data-tab-target="#film" class="active tab">
-            <h4>1</h4>
-            <p>Short Movie</p>
+            <h4>3</h4>
+            <p>Movie & Series</p>
           </li>
         </ul>
 
         <div class="tab-content">
           <div id="design" data-tab-content>
-            <div class="card_des">
+            <div class="card_des des1">
+              <img
+                src="assets\bg_ramadhan.jpg"
+                alt="ramadhan berbagi"
+                class="bgdes"
+              />
               <div class="name_des">
-                <p>Social Media Campaign</p>
+                <p class="categories">Social Media Campaign</p>
                 <h2>Ramadhan Berbagi</h2>
-                <p class="card">2023</p>
+                <p class="desc_des">Program Mentari Ilmu Charity</p>
+                <a
+                  class="badge"
+                  target="_blank"
+                  href="https://www.instagram.com/mentariilmu.charity/"
+                  >MORE</a
+                >
               </div>
               <div class="logo_des">
-                <img src="" alt="" />
+                <img src="assets\logo_ramadhan.png" alt="logo" />
+              </div>
+            </div>
+            <div class="card_des des2">
+              <img
+                src="assets\bg_qurban.jpg"
+                alt="ramadhan berbagi"
+                class="bgdes"
+              />
+              <div class="name_des">
+                <p class="categories">Social Media Campaign</p>
+                <h2>Berbagi Qurban</h2>
+                <p class="desc_des">Program Mentari Ilmu Charity</p>
+                <a
+                  class="badge"
+                  target="_blank"
+                  href="https://www.instagram.com/mentariilmu.charity/"
+                  >MORE</a
+                >
+              </div>
+              <div class="logo_des">
+                <img src="assets\logo_qurban.png" alt="logo" />
+              </div>
+            </div>
+            <div class="card_des des3">
+              <img
+                src="assets\bg_stinco.jpg"
+                alt="ramadhan berbagi"
+                class="bgdes"
+              />
+              <div class="name_des">
+                <p class="categories">Social Media Management</p>
+                <h2>STINCO 21</h2>
+                <p class="desc_des">
+                  Student In Covid 2021//Angkatan 2021 SMAN 2 Karawang
+                </p>
+                <a
+                  class="badge"
+                  target="_blank"
+                  href="https://www.instagram.com/stinco_36/"
+                  >MORE</a
+                >
+              </div>
+              <div class="logo_des">
+                <img src="assets\logo_stinco.png" alt="logo" />
               </div>
             </div>
           </div>
@@ -191,81 +245,249 @@
             </div>
           </div>
           <div id="film" data-tab-content class="active">
-            <div class="title_movie">
-              <div class="reminisensi">
-                <h2>Reminisensi</h2>
-                <p class="tag">2021 • 10.45m</p>
-              </div>
-              <div class="container_stats">
-                <ul class="years">
-                  <li class="number">2.343 <i class="bi bi-eye"></i></li>
-                </ul>
-                <ul class="project">
-                  <li class="number">
-                    338 <i class="bi bi-hand-thumbs-up"></i>
-                  </li>
-                </ul>
-                <ul class="movie">
-                  <li class="number">
-                    87 <i class="bi bi-chat-left-text-fill"></i>
-                  </li>
-                </ul>
-              </div>
+            <div class="nav_year">
+              <input hidden type="radio" name="tahun" id="th21" />
+              <label for="th21" class="tab_control">2021</label>
+              <span class="line"></span>
+              <input hidden type="radio" name="tahun" id="th22" />
+              <label for="th22" class="tab_control">2022</label>
+              <span class="line"></span>
+              <input hidden type="radio" name="tahun" id="th23" checked />
+              <label for="th23" class="tab_control">2023</label>
             </div>
-            <div class="poster">
-              <img src="assets/poster.jpg" alt="poster-reminisensi" />
-              <div class="yt_reminisensi">
-                <iframe
-                  class="embed_rem"
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/_aYx3ZXfn60"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <div class="desc_movie">
-              <div class="content_movie">
-                <p class="txt">
-                  Menurutnya, belajar dari rumah sangat menyebalkan. Adel
-                  (Adelia Oktaviani), selalu menunggu kapan waktu untuk kembali
-                  sekolah normal. Apakah keinginannya untuk kembali bersekolah
-                  seperti biasa bisa terwujud sebelum Adel lulus dari SMA?
-                </p>
-                <p class="credit credit1">
-                  <b>Director :</b> Aditya Ramadhan Sulistiyo
-                </p>
-                <p class="credit credit2"><b>Starring :</b> Adelia Oktaviani</p>
-                <p class="credit credit3"><b>Production :</b> YXGN Creative</p>
-                <a href="" class="bt"
-                  >Watch on <i class="bi bi-youtube"></i> YouTube</a
-                >
-              </div>
-              <div class="bts">
-                <div class="bts_thumbnail">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/77gUQ0_B_3U"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+            <div class="pages">
+              <div class="page" id="page1">
+                <div class="title_movie">
+                  <div class="reminisensi">
+                    <h2>Reminisensi</h2>
+                    <p class="tag">2021 • 10.45m • SHORT MOVIE</p>
+                  </div>
+                  <div class="container_stats">
+                    <ul class="years">
+                      <li class="number">2.523 <i class="bi bi-eye"></i></li>
+                    </ul>
+                    <ul class="project">
+                      <li class="number">
+                        347 <i class="bi bi-hand-thumbs-up"></i>
+                      </li>
+                    </ul>
+                    <ul class="movie">
+                      <li class="number">
+                        86 <i class="bi bi-chat-left-text-fill"></i>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="bts_thumbnail">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/ksGjjAlNPn4"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+                <div class="poster">
+                  <img src="assets/poster.jpg" alt="poster-reminisensi" />
+                  <div class="yt_reminisensi">
+                    <iframe
+                      class="embed_rem"
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/_aYx3ZXfn60"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="desc_movie">
+                  <div class="content_movie">
+                    <p class="txt">
+                      Menurutnya, belajar dari rumah sangat menyebalkan. Adel
+                      (Adelia Oktaviani), selalu menunggu kapan waktu untuk
+                      kembali sekolah normal. Apakah keinginannya untuk kembali
+                      bersekolah seperti biasa bisa terwujud sebelum Adel lulus
+                      dari SMA?
+                    </p>
+                    <p class="credit credit1">
+                      <b>Director :</b> Aditya Ramadhan Sulistiyo
+                    </p>
+                    <p class="credit credit2">
+                      <b>Starring :</b> Adelia Oktaviani
+                    </p>
+                    <p class="credit credit3">
+                      <b>Production :</b> YXGN Creative
+                    </p>
+                    <a href="" class="bt"
+                      >Watch on <i class="bi bi-youtube"></i> YouTube</a
+                    >
+                  </div>
+                  <div class="bts">
+                    <div class="bts_thumbnail">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/77gUQ0_B_3U"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="bts_thumbnail">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/ksGjjAlNPn4"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page" id="page2">
+                <div class="title_movie">
+                  <div class="reminisensi">
+                    <h2>Gelas Kosong</h2>
+                    <p class="tag">2022 • 8.44m • SHORT MOVIE</p>
+                  </div>
+                  <div class="container_stats">
+                    <ul class="years">
+                      <li class="number">- <i class="bi bi-eye"></i></li>
+                    </ul>
+                    <ul class="project">
+                      <li class="number">
+                        - <i class="bi bi-hand-thumbs-up"></i>
+                      </li>
+                    </ul>
+                    <ul class="movie">
+                      <li class="number">
+                        - <i class="bi bi-chat-left-text-fill"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="poster">
+                  <img
+                    src="assets/poster_gelas kosong.jpeg"
+                    alt="poster-gelas kosong"
+                  />
+                  <div class="yt_reminisensi">
+                    <img src="assets/thumbnail_gelas kosong.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="desc_movie">
+                  <div class="content_movie">
+                    <p class="txt">
+                      Di hari pertama kuliah, Agra (19) duduk sendirian di
+                      kantin dengan segelas kopi di meja, sembari menunggu jam
+                      kelasnya. Ia banyak bertemu dan berkenalan dengan teman
+                      sejurusannya. Namun, di setiap Agra mencoba berkenalan,
+                      dia selalu saja menunjukkan isi dari dalam dirinya, yang
+                      membuat perkenalan mereka berjalan tidak baik.
+                    </p>
+                    <p class="credit credit1">
+                      <b>Producer :</b> Aditya Ramadhan Sulistiyo
+                    </p>
+                    <p class="credit credit2">
+                      <b>Director :</b> Dikho Pradiva Putra Dira
+                    </p>
+                    <p class="credit"><b>Writter :</b> Gloria Deby Yumima</p>
+                    <p class="credit credit3">
+                      <b>Production :</b> Ghondes Film
+                    </p>
+                  </div>
+                  <div class="bts">
+                    <div class="bts_thumbnail">
+                      <img src="assets/bts_1.jpg" alt="" />
+                    </div>
+                    <div class="bts_thumbnail">
+                      <img src="assets/bts_2.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page" id="page3">
+                <div class="title_movie">
+                  <div class="reminisensi">
+                    <h2>Hampir Tersesat</h2>
+                    <p class="tag">2023 • 4 EPISODE • YouTube Series</p>
+                  </div>
+                  <div class="container_stats">
+                    <ul class="years">
+                      <li class="number">449 <i class="bi bi-eye"></i></li>
+                    </ul>
+                    <ul class="project">
+                      <li class="number">
+                        68 <i class="bi bi-hand-thumbs-up"></i>
+                      </li>
+                    </ul>
+                    <ul class="movie">
+                      <li class="number">
+                        13 <i class="bi bi-chat-left-text-fill"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="poster">
+                  <img
+                    src="assets/poster_hampir tersesat.jpeg"
+                    alt="poster-hampir tersesat"
+                  />
+                  <div class="yt_reminisensi">
+                    <iframe
+                      class="embed_rem"
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/E4x-Imx1jHU"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="desc_movie">
+                  <div class="content_movie">
+                    <p class="txt">
+                      Seorang musafir terdampar di sebuah daratan setelah
+                      perahunya menabrak sesuatu lalu bertemu dengan tiga warga
+                      yang membantu. Musafir itu pun mulai menjelajahi kota
+                      Solo.
+                    </p>
+                    <p class="credit credit1">
+                      <b> Producer :</b> Aditya Ramadhan Sulistiyo
+                    </p>
+                    <p class="credit credit2">
+                      <b> Director & Writter :</b> Muhammad Ghalib Firdaus
+                    </p>
+                    <p class="credit credit3">
+                      <b>Production :</b> Castaway 22
+                    </p>
+                    <a href="" class="bt"
+                      >Watch on <i class="bi bi-youtube"></i> YouTube</a
+                    >
+                  </div>
+                  <div class="bts">
+                    <div class="bts_thumbnail">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/EhWj5eqP_AM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="bts_thumbnail">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/Bf8yoF8XRCY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

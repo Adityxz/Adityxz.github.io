@@ -74,7 +74,7 @@ header .logo {
   background-color: var(--bg);
   width: 250px;
   height: 80vh;
-  z-index: 111;
+  z-index: 511;
   /* display: none; */
   transition: 0.6s;
   height: 100%;
@@ -271,7 +271,7 @@ input:checked + .slider:before {
   flex-basis: 150px;
 }
 .tab.active {
-  border-bottom: 2px solid #212121;
+  border-bottom: 2px solid var(--grey);
 }
 .tab:hover {
   border-bottom: 2px solid #21212174;
@@ -293,19 +293,94 @@ input:checked + .slider:before {
 }
 /* design */
 #design.active {
-  display: block;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 50px;
+}
+.bgdes {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  z-index: -22;
+  opacity: 60%;
+  border-radius: 25px;
 }
 .card_des {
-  background-image: url("assets\_MG_1019-min.JPG");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  display: flex;
+  height: 300px;
+  align-items: center;
+  border-radius: 25px;
+}
+.name_des {
+  width: 75%;
+  padding-left: 10%;
+  color: var(--grey);
+}
+.name_des h2 {
+  font-size: 54px;
+  font-weight: 600;
+  margin: -8px 0px;
+}
+.name_des p {
+  font-size: 18px;
+}
+.name_des .categories {
+  font-weight: 600;
+  font-style: italic;
+}
+.name_des .desc_des {
+  margin-bottom: 15px;
+}
+.name_des .badge {
+  font-weight: 600;
+  color: var(--bg);
+  background-color: var(--grey);
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.logo_des {
+  width: 25%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 80%);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+.logo_des img {
+  height: 100%;
+  object-fit: cover;
 }
 /* movie tab */
 #film {
   width: 100%;
   margin-bottom: 200px;
   color: var(--grey);
+}
+.nav_year {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+.nav_year .tab_control {
+  color: var(--grey);
+  border-radius: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+input[type="radio"]:checked + .tab_control {
+  background-color: var(--grey);
+  color: var(--bg);
+}
+.line {
+  border: 1px solid var(--grey);
+  width: 20%;
 }
 .bt {
   text-decoration: none;
@@ -338,6 +413,11 @@ input:checked + .slider:before {
 }
 .poster .yt_reminisensi {
   width: 69%;
+}
+.yt_reminisensi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .container_stats {
   display: flex;
@@ -372,6 +452,12 @@ input:checked + .slider:before {
   height: 100%;
   width: 500px;
   margin: 10px 0;
+}
+.bts_thumbnail img {
+  width: 500px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 .desc_movie {
   display: flex;
