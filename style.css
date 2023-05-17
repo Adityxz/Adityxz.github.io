@@ -559,6 +559,7 @@ footer {
 @media screen and (max-width: 480px) {
   header nav {
     width: 95%;
+    padding: 0 15px;
   }
   header .bi-list {
     font-size: 18px;
@@ -572,21 +573,74 @@ footer {
   }
   .text_home {
     width: 97%;
-    background-color: #686868;
   }
   .text_home h1 {
     font-size: 28px;
   }
   .corner {
-    width: 50%;
+    width: 80%;
+  }
+  .corner .name {
+    font-size: 14px;
+  }
+  .corner .title {
+    font-size: 21px;
+  }
+  .txt_corner {
+    font-size: 10px;
+  }
+  /* profile */
+  .content_profile {
+    right: 50%;
+  }
+  .img_profile {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* stats */
+  .tabs {
+    width: 95%;
+    height: 30px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .tabs h3 {
+    font-size: 18px;
+    padding-right: 25px;
+  }
+  .tabs h4 {
+    font-size: 18px;
+  }
+  .tabs p {
+    font-size: 10px;
+  }
+  .tab {
+    padding: 0;
+    flex-basis: none;
+  }
+  .stroke {
+    height: 30px;
   }
   /* movie */
   .title_movie {
     flex-direction: column;
+    padding: 0;
   }
   .desc_movie {
     margin: auto 0;
     flex-direction: column;
+    width: 95%;
+  }
+  .content_movie {
+    font-size: 11px;
+    padding: 0 5px;
+  }
+  .container_stats {
+    margin-top: 30px;
+    width: 70%;
+    font-size: 14px;
   }
   .bts_thumbnail {
     width: 95%;
@@ -609,7 +663,7 @@ footer {
     flex-basis: 0;
   }
   .foot_mid {
-    padding: 0px 50px;
+    padding: 10px 50px;
     font-size: 32px;
     font-weight: 600;
     border-top: 1px solid var(--grey);
@@ -617,8 +671,29 @@ footer {
     border-left: 0;
     border-right: 0;
     text-align: center;
+    margin-bottom: 10px;
+    /* line-height: 32px; */
   }
   .foot_contact {
     align-items: center;
+  }
+  .foot_contact .email {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .flexcol {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .foot_nav {
+    padding: 0;
+    width: 90%;
+  }
+  .foot_nav li {
+    justify-content: space-around;
+    padding: 0;
+    width: 50%;
   }
 }
