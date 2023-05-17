@@ -446,6 +446,7 @@ input[type="radio"]:checked + .tab_control {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  gap: 20px;
 }
 .bts_thumbnail {
   border-radius: 15px;
@@ -591,21 +592,24 @@ footer {
     font-size: 10px;
   }
   /* profile */
+  #profile {
+    height: 70vh;
+  }
   .content_profile {
+    position: absolute;
+    top: 90%;
     right: 30%;
-    top: 35%;
+    height: 100%;
   }
   .content_profile h2 {
-    font-size: 32px;
+    font-size: 42px;
+    line-height: 72px;
   }
   .content_profile p {
     font-size: 10px;
   }
   .img_profile {
     width: 250px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
   }
   /* stats */
   .tabs {
@@ -631,15 +635,68 @@ footer {
   .stroke {
     height: 30px;
   }
+  .tab-content {
+    margin: 70px auto;
+  }
+  /* video */
+  #video.active {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  .embed {
+    height: 150px;
+  }
+  /* desain */
+  #design.active {
+    gap: 20px;
+  }
+  .card_des {
+    height: 150px;
+    border-radius: 15px;
+  }
+  .bgdes {
+    height: 150px;
+    border-radius: 15px;
+  }
+  .name_des h2 {
+    font-size: 22px;
+  }
+  .name_des p {
+    font-size: 10px;
+  }
+  .name_des .desc_des {
+    margin-bottom: 5px;
+  }
+  .name_des .badge {
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .logo_des {
+    width: 30%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+  }
+  .logo_des img {
+    height: 80%;
+  }
   /* movie */
+  #film.active {
+    margin-bottom: 150px;
+  }
   .title_movie {
     flex-direction: column;
     padding: 0;
   }
+  .title_movie h2 {
+    font-size: 42px;
+  }
   .desc_movie {
     margin: auto 0;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
   }
   .content_movie {
     font-size: 11px;
@@ -650,11 +707,22 @@ footer {
     width: 70%;
     font-size: 14px;
   }
+  .bts {
+    width: 100%;
+    margin: 40px 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .bts_thumbnail {
     width: 95%;
+    margin: 0 auto;
   }
   .bts_thumbnail img {
     width: 95%;
+  }
+  .nav_year {
+    width: 90%;
+    font-size: 14px;
   }
   /* contact */
   .container_contact {
