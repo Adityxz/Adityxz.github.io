@@ -169,6 +169,7 @@ input:checked + .slider:before {
 .txt_corner {
   font-size: small;
 }
+
 /* profile */
 #profile {
   height: 100vh;
@@ -593,7 +594,7 @@ footer {
   }
   /* profile */
   #profile {
-    height: 70vh;
+    height: 85vh;
   }
   .content_profile {
     position: absolute;
@@ -609,7 +610,7 @@ footer {
     font-size: 10px;
   }
   .img_profile {
-    width: 250px;
+    display: none;
   }
   /* stats */
   .tabs {
