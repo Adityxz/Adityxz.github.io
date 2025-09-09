@@ -34,6 +34,7 @@ header {
   width: 100%;
   background-color: var(--bg);
   z-index: 999;
+  transition: 0.6s;
 }
 header nav {
   margin: 0 auto;
@@ -43,6 +44,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding: 0px 90px;
+  transition: 0.6s;
 }
 header .bi-list {
   color: var(--grey);
@@ -92,6 +94,7 @@ header .logo {
 .menu li a {
   color: var(--grey);
   cursor: pointer;
+  transition: 0.6s;
 }
 
 /* darkmode-toggle */
@@ -451,17 +454,20 @@ iframe {
   margin-left: auto;
   background-color: var(--grey);
   padding: 50px;
+  transition: 0.6s;
 }
 .container_contact h2 {
   color: var(--bg);
   font-size: 32px;
   margin-bottom: 25px;
+  transition: 0.6s;
 }
 .container_contact a {
   color: var(--bg);
   padding: 5px 10px;
   border-radius: 15px;
   border: 2px solid var(--bg);
+  transition: 0.6s;
 }
 /* footer */
 footer {
