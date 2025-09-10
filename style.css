@@ -312,7 +312,7 @@ input:checked + .slider:before {
   gap: 40px;
 }
 #design.active[data-tab-content] > :last-child:nth-child(odd) {
-  grid-column: 2; /* paksa item terakhir pindah ke kolom kanan */
+  grid-column: 2;
 }
 .behance {
   width: 100%;
@@ -648,6 +648,9 @@ footer {
   }
   .behance {
     height: 214px;
+  }
+  #design.active[data-tab-content] > :last-child:nth-child(odd) {
+    grid-column: 1;
   }
   /* movie */
   #film.active {
